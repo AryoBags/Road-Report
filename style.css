@@ -1,0 +1,1758 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Manrope:wght@500&family=Montserrat:ital,wght@0,500;0,600;0,700;0,800;1,800&family=Mulish:wght@300;700&family=Plus+Jakarta+Sans:wght@700&display=swap');
+
+:root{
+    --main-color : #4385F5;
+    --primary : #586AF5;
+    --text-1:#333333;
+    --text-2 : #4F4F4F;
+    --text-3: #F1F2F6
+    --neutral:#1B1D21;
+
+    --main-font:'Inter', sans-serif;
+    --heading-font:'Montserrat', sans-serif;
+    --fitur-font: 'Mulish', sans-serif;
+    --jalan-font: 'Manrope', sans-serif;
+    --download-font:'Plus Jakarta Sans', sans-serif;
+
+
+}
+    
+
+* {
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   list-style: none;
+   text-decoration: none;   
+}
+body {
+    background-color: #fff;
+    font-family: var(--main-font);
+}
+
+section{
+    margin-top: 200px;
+}
+
+.container{
+    width: 1500px;
+}
+
+
+.navbar .nav-wrapper{
+    display: flex;
+    width: 100%;
+    height: 106px;
+    padding: 32px 72px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 281px;
+}
+
+.nav-wrapper .logo{
+    width: 120px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    margin-top: -31px;
+}
+.nav-wrapper .menu-toggle{
+    display: none;
+}
+
+.nav-wrapper .menu-wrapper{
+    display: flex;
+    gap:367px;
+    background-color: #fff;
+    justify-content: center; 
+    align-items: center;
+    padding: auto;
+}
+.nav-wrapper .menu-wrapper .menu{
+    display: flex;
+    gap:29px;
+    align-items: center;
+}
+.menu-wrapper .menu .menu-link{
+    font-size: 16px;
+    font-family: var(--heading-font);
+    color: var(--text-1);
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+}
+.menu-wrapper .menu .menu-link.active{
+    font-size: 16px;
+    font-family: var(--heading-font);
+    color: var(--primary);
+    font-weight: 700;
+    box-shadow: 30px solid gray;
+}
+
+.menu-wrapper .btn-login{
+    color:  #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    text-transform: capitalize;
+    display: flex;
+    padding: 8px 20px;
+    justify-content:  space-around;
+    align-items: center;
+    gap: 6px;
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    background: var(--primary);
+
+}
+/* Home :start */
+.home{
+    margin:200px 0 120px 0;
+}
+.home .home-wrapper{
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 72px;
+    width: 100%;
+    
+}
+.heading{
+    font-size: 48px;
+    font-family: var(--heading-font);
+    font-weight: 800;
+    line-height: 60px;
+   
+}
+.heading span{
+    font-style: italic;
+    color: var(--primary);
+}
+.subheading{
+    margin: 24px 0 46px 0;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--text-2);
+    line-height: 24px;
+    
+}
+.download{
+    border-radius: 10px;
+    background: var(--primary);
+    box-shadow: 0px 20px 35px 0px rgba(68, 117, 242, 0.21);
+    padding: 20px 24px 20px 10px;
+    display: flex ;
+    justify-content:space-evenly;
+    text-align: center;
+    align-items: center;
+    max-width: 40%;
+    gap: 11px;
+    color: #FFF;
+    font-family: var(--download-font);
+    font-size: 16px;
+    font-weight: 700;
+    
+}
+
+.home-wrapper .content-left{
+    flex: 0 0 50%;
+}
+.home-wrapper .content-right{
+    flex: 0 0 50%;
+
+}
+.content-right{
+    width: 100%;
+}
+
+.image1{
+    top: 290px;
+    right: 128px;
+    width: 547px;
+    height: 522px;
+    position: absolute;
+}
+ .image2{
+    position: absolute;
+    top: 268px;
+    right: 110px;
+ 
+}
+ .image3{
+    position: absolute;
+    right: 547px;
+    top: 551px;
+
+}
+ .image4{
+    position: absolute;
+    right: 154px;
+    top: 610px;
+  
+}
+/* home : end */
+
+
+/* Fitur :start */
+
+.fitur{
+    margin:200px 0 120px 0;
+}
+ .fitur-wrapper{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 72px;
+    gap: 23px;
+    width: 100%;
+    margin-top: 120px;
+    
+}
+.fitur .fitur-wrapper .heading-fitur{
+    gap: 20px;
+    height: 223px;
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 1);
+}
+.heading-fitur h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-family: var(--heading-font);
+    color: var(--primary);
+    letter-spacing: 0.095em;
+    line-height: 27px;
+    letter-spacing: 0.095em;
+    text-align: center;
+}
+.heading-fitur h1{
+  color: #151D21;
+  height: auto;
+  font-size: 48px;
+  align-self: stretch;
+  font-style: Bold;
+  text-align: center;
+  font-family: var(--heading-font);
+  font-weight: 700;
+  line-height: 62px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.heading-fitur p{
+    color: var(--text-2);
+    width: 820px;
+    height: auto;
+    font-size: 18px;
+    font-style: Regular;
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 400;
+    line-height: 32px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.map{
+    width: 100%;
+    height: auto;
+    height: 488px;
+    position: relative;
+    box-shadow: 0px 56px 80px 0px rgba(185, 185, 185, 0.07000000029802322) ;
+    align-items: flex-start;
+    flex-shrink: 0;
+}
+.img-map {
+    top: 0.3294677734375px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 8px;
+  }
+
+.service{
+    row-gap: 37px;
+    column-gap: 143px;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: stretch;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    justify-content: center;
+    margin-top: 100px ;  
+}
+.frame{
+    max-width:  350px;
+    max-height: 322px;
+    display: flex;
+    padding: 24px;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+    background-color: #FFF;
+    gap: 7px;
+  
+}
+.machinelearning{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-machine{
+  max-width: 153px;
+  max-height: 153px;
+}
+.heading-machine{
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-style: Bold;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 700;
+    line-height: 56px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.text-machine{
+    color: var(--text-2);
+    height: auto;
+    flex-grow: 1;
+    font-size: 16px;
+    align-self: stretch;
+    font-style: Light;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 300;
+    line-height: 28px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.pemantauan{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+.img-pantau{
+    max-width: 153px;
+    max-height: 153px; 
+}
+.heading-pantau{
+color: rgba(0, 0, 0, 1);
+width: 100%;
+  height: auto;
+  font-size: 24px;
+  font-style: Bold;
+  text-align: left;
+  font-family: var(--fitur-font);
+  font-weight: 700;
+  line-height: 56px;
+  font-stretch: normal;
+  text-decoration: none;
+}
+.text-pantau{
+    color: var(--text-2);
+    height: auto;
+    flex-grow: 1;
+    font-size: 16px;
+    align-self: stretch;
+    font-style: Light;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 300;
+    line-height: 28px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.petainter{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-petainter img{
+    max-width: 150px;
+  max-height: 150px;
+}
+.heading-petainter{
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-style: Bold;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 700;
+    line-height: 56px;
+    font-stretch: normal;
+    text-decoration: none; 
+}
+.text-petainter{
+    color: var(--text-2);
+    height: auto;
+    font-size: 16px;
+    align-self: stretch;
+    font-style: Light;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 300;
+    line-height: 28px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+.pelaporan{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-pelaporan img{
+    max-width: 150px;
+  max-height: 150px;
+}
+.heading-pelaporan{
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-style: Bold;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 700;
+    line-height: 56px;
+    font-stretch: normal;
+    text-decoration: none; 
+}
+.text-pelaporan{
+    color: var(--text-2);
+    height: auto;
+    font-size: 16px;
+    align-self: stretch;
+    font-style: Light;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 300;
+    line-height: 28px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.perbaikan{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.img-perbaikan img{
+    max-width: 150px;
+  max-height: 150px;
+}
+.heading-perbaikan{
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-style: Bold;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 700;
+    line-height: 56px;
+    font-stretch: normal;
+    text-decoration: none; 
+}
+.text-perbaikan{
+    color: var(--text-2);
+    height: auto;
+    font-size: 16px;
+    align-self: stretch;
+    font-style: Light;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 300;
+    line-height: 28px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.kepinfo{
+    gap: 12px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-kepinfo img{
+    max-width: 137px;
+  max-height: 137px;
+}
+.heading-kepinfo{
+    color: rgba(0, 0, 0, 1);
+    width: 100%;
+    height: auto;
+    font-size: 24px;
+    font-style: Bold;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 700;
+    line-height: 56px;
+    font-stretch: normal;
+    text-decoration: none; 
+}
+.text-kepinfo{
+    color: var(--text-2);
+    height: auto;
+    font-size: 16px;
+    align-self: stretch;
+    font-style: Light;
+    text-align: left;
+    font-family: var(--fitur-font);
+    font-weight: 300;
+    line-height: 28px;
+    font-stretch: normal;
+    text-decoration: none;
+}
+
+/* Fitur end  */
+
+/* Dashboard Monitoring start  */
+
+.monitoring{
+    margin:200px 0 120px 0;
+}
+.monitoring .monitoring-wrapper{
+    display: flex;
+    align-self: stretch;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 82px;
+   
+  
+}
+.heading-monitoring{
+    color: rgba(21, 29, 33, 1);
+    height: auto;
+    font-size: 48px;
+    align-self: stretch;
+    font-style: Bold;
+    text-align: center;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    line-height: 62px;
+    font-stretch: normal;
+    text-decoration: none;
+
+}
+.slider{
+    width: 100%;
+  display: flex;
+  padding: 82px 39px 82px 72px;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-shrink: 0;
+
+}
+.frame-slider{
+    gap: 34px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    width: 100%;
+}
+.slide-left{
+ width: 45%;
+ margin: 113px 0;
+ display: flex;
+ align-items: flex-start;
+ flex-direction: column;
+ gap: 14px;
+ align-content: center;
+}
+
+.slide-right{
+width: 55%;
+}
+.img-monitoring{
+    width: 100% ;
+}
+.img-monitoring img{
+    width: 100%;
+}
+
+.icon-grup{
+    margin-top: 10px;
+}
+.back{
+    background-color: #F0EEEE;
+    padding: 15px;
+    border-radius: 50%;
+}
+.judul{
+    color: rgba(2, 1, 1, 1);
+    width: 462px;
+    height: auto;
+    font-size: 36px;
+    font-style: Bold;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-weight: 700;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.deskripsi{
+    color: var(--text-2);
+    width: 445px;
+    height: auto;
+    font-size: 20px;
+    font-style: Regular;
+    text-align: left;
+    font-family: var(--heading-font);
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+}
+.frame-slider {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.frame-slider.active-slide {
+    display: flex;
+    opacity: 1;
+    width: 100%;
+}
+.slider-container{
+    width: 100%;
+}
+
+.frame-slider.hidden-slide {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.document-ready {
+    opacity: 1;
+}
+
+/* Add CSS to control transitions */
+.navigator a.active {
+    background-color: var(--primary);
+    color: var(--primary);
+    border-radius: 50%;
+    transition: background-color 0.5s ease-in-out;
+}
+.navigator a{
+    padding: 8px;
+    font-size: 0px;
+    color: #C4C4C4;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+}
+.navigator {
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: sticky;
+    gap: 24px;
+}
+/* Dashboard Monitoring End  */
+
+/* Jalanrusak start  */
+.jalanrusak{
+    margin:200px 0 120px 0;
+}
+.jalanrusak .jalanrusak-wrapper{
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+  position: relative;
+  flex-shrink: 1;
+    width: 100%;
+    padding: 82px 39px 82px 72px;
+   
+  
+}
+.content-jalanrusak{
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    max-width: 1440px;
+    max-height: 385px;
+    background-color: var(--primary) ;
+    border-radius: 16px;
+}
+.content-left{
+    width: 50%;
+    
+}
+.content-right{
+     width: 50%;
+ }
+.content-text{
+    padding: 40px 48px 0px 48px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.content-judul{
+    color: #FFF;
+    font-feature-settings: 'liga' off;
+    font-family: var(--heading-font);
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 54px; /* 135% */
+}
+.content-judul span{
+    color: #FFF;
+font-feature-settings: 'liga' off;
+font-weight: 700;
+line-height: 54px;
+}
+
+.content-deskripsi{
+    color: #F1F2F6;
+    font-feature-settings: 'liga' off;
+    font-family: var(--jalan-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 177.778% */
+}
+.img-jalanrusak{
+    width: 100%;
+    max-height :385px; 
+}
+.img-jalan-rusak{
+    width: 100%;
+    height: 385px; 
+    border-radius: 0  16px 16px 0;
+}
+.download-jalanrusak{
+    border-radius: 16px;
+    background: var(--primary);
+    box-shadow: 0px 20px 35px 0px rgba(68, 117, 242, 0.21);
+    display: flex ;
+    justify-content:flex-start;
+    text-align: center;
+    align-items: center;
+    max-width: 260px;
+    gap: 20px;
+    color: #FFF;
+    font-family: var(--download-font);
+    font-size: 16px;
+    font-weight: 700;
+}
+/* Jalanrusak end */
+
+/* FOTTER */
+
+footer {
+    gap: 20px;
+    display: flex;
+    padding: 80px 0 24px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .frame-footer {
+    gap: 153px;
+    width: 100%;
+    display: flex;
+    padding: 0 165px;
+    flex-shrink: 0;
+    flex-direction: row;
+    justify-content: center;
+  position: relative;
+  padding: 82px 39px 82px 72px;
+  }
+  .footer-readreport {
+    gap: 64px;
+    width: 280px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .img-logokecil {
+    width: 95px;
+    height: 37px;
+  }
+  .text-logokecil {
+    color: var(--text-2, #4F4F4F);
+font-family: var(--heading-font);
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 30px; /* 150% */
+  }
+  
+  .logo-sosmed {
+    gap: 32px;
+    display: flex;
+    align-items: flex-start;
+  }
+  .group-sosmed {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .sosmed {
+    top: 0px;
+    left: 0px;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+  }
+  
+  .footer-colab {
+    gap:55px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .text-colab {
+    color: #191825;
+    font-family: var(--heading-font);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 27.6px */
+  }
+  .frame-colab {
+    gap: 22px;
+    display: flex;
+    align-items: center;
+  }
+ 
+  .img-pis {
+    width: 34px;
+    height: 49px;
+  }
+  .logo-polinema {
+    width: 53px;
+    height: 53px;
+  }
+  .logo-kedaireka {
+    width: 181px;
+    height: 40px;
+  }
+  .footer-alamat {
+    gap: 32px;
+    width: 325px;
+    display: flex;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+  }
+  .heading-alamat {
+    color:  #191825;
+    font-family: var(--heading-font);
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 27.6px */
+  }
+  .email {
+    color:  rgba(25, 24, 37, 0.75);
+    font-family: var(--heading-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+  }
+ 
+  .text-alamat {
+    color:  rgba(25, 24, 37, 0.75);
+    font-family: var(--heading-font);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%; /* 28.8px */
+  }
+  .frame-tag {
+    gap: 12px;
+    width: 100%;
+    display: flex;
+    padding: 24px 12px;
+    align-items: center;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tag {
+    color: var(--text-2);
+    text-align: center;
+    font-family: var(--heading-font);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.5px;
+  }
+
+@media screen and (min-width: 1800px){
+    .nav-wrapper .menu-wrapper{
+        display: flex;
+        gap:550px;
+    }
+    .download{
+        max-width: 30%;
+    }
+
+}
+@media screen and (max-width: 1370px){
+    .nav-wrapper .menu-wrapper .menu{
+      
+        gap:19px;
+      
+    }
+    .navbar .nav-wrapper{
+        gap:200px;
+    }
+    .nav-wrapper .menu-wrapper{
+        gap:200px;
+      
+    /* home start */
+    }
+    .image1{
+       
+        width: 400px;
+        height: 400px;
+        
+    }
+     .image2{
+        width: 150px;
+        height: 150px;
+     
+    }
+     .image3{
+        width: 150px;
+        height: 150px;
+        right: 406px;
+    
+    }
+     .image4{
+        width: 140px;
+        height: 250px;
+        top: 540px;
+      
+    }
+    .heading{
+        font-size: 32px;
+    }
+    .subheading{
+        font-size: 14px;
+    }
+    .download{
+        padding: 10px 14px 10px 10px;
+        font-size: 14px;
+        max-width: 40%;
+    }
+  /* home end */
+
+    /* fitur start */
+    
+
+    
+    .heading-fitur h1{
+        font-size: 32px;
+    }
+
+      /* fitur end */
+
+       /* monitor start */
+    
+    
+        /* monitor end */
+
+    /* Jalan Rusak start */
+    .content-judul{
+        font-weight: 500;
+        font-size:32px ;
+        line-height: 54px; /* 135% */
+    }    
+    .content-deskripsi{
+        color: #F1F2F6;
+        font-size: 18px;
+        line-height: 32px; /* 177.778% */
+    }
+    /* jalan rusak end */
+
+}
+
+
+@media screen and (max-width: 991px){
+    .nav-wrapper .menu-wrapper .menu{
+      
+        gap:19px;
+      
+    }
+    .navbar .nav-wrapper{
+        gap:100px;
+    }
+    .nav-wrapper .menu-wrapper{
+        gap:100px;
+      
+    }
+     /* home start */
+    .image1{
+       
+        width: 350px;
+        height: 350px;
+        
+    }
+     .image2{
+        width: 100px;
+        height: 100px;
+        right: 117px;
+        top: 284px;
+    }
+     .image3{
+        width: 100px;
+        height: 100px;
+        right: 392px;
+        top: 485px;
+    
+    }
+     .image4{
+        width: 100px;
+        height: 200px;
+        top: 498px;
+      
+    }
+     /* home end */
+
+      /* Fitur start */
+
+      .map{
+        width: 800px;
+        height: 400px;
+    }
+    .service{
+        row-gap: 37px;
+        column-gap: 118px; 
+    }
+    .frame{
+        max-width: 250px;
+    }
+    .frame p{
+        font-size: 14px;
+    }
+    .frame h2{
+        font-size: 18px;
+    }
+    .frame img{
+       height: 120px;
+       width: 120px;
+    }
+    
+
+      /* Fitur end */
+       /* monitor start */
+
+       .heading-monitoring h1{
+        font-size: 48px;
+       }
+    
+   
+.slide-left{
+    margin:auto;
+}
+    .img-monitoring{
+        width: 100% ;
+    }
+    .img-monitoring img{
+        width: 100%;
+    }
+    .judul{
+        font-size: 32px;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .deskripsi{
+        max-width: 100%;
+        height: auto;
+        font-size: 14px;
+      
+    }
+    
+         /* monitor end */
+           /* jalanrusak start */
+
+       .content-judul{
+        font-size:22px ;
+        line-height: 54px; /* 135% */
+    }    
+    .content-deskripsi{
+        font-size: 14px;
+        line-height: 32px; /* 177.778% */
+        
+    }
+    .download-jalanrusak img{
+        max-width: 20px;
+    }
+    .download-jalanrusak{
+        font-size: 14px;
+      /* jalan rusak end */
+      
+      
+}
+/* footer */
+.frame-footer{
+    flex-direction: column;
+}
+
+.footer-colab, .footer-alamat, .footer-readreport,.tag{
+    align-items: center;
+    text-align: center;
+    width: 100%;
+}
+}
+
+@media screen and (max-width: 828px){
+    .nav-wrapper .menu-wrapper{
+        
+        position: absolute;
+        top:20%;
+        left: 50%;
+        transform: translateX(-50%);
+       width: 50%;
+        display: block;
+        text-align: center;
+        border: 1px solid var(--primary);
+        background-color: var(--primary);
+        border-radius: 10px;
+        padding-bottom: 18px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .5s ease-in-out;
+        z-index: 1;
+        
+      
+    }
+    .nav-wrapper .menu-wrapper.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .5s ease-in-out;
+        margin-top: -12px;
+        
+        
+      
+    }
+    .nav-wrapper .menu-wrapper .menu{
+      display: block;
+    }
+    .menu-toggle.bx-x{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+
+    li img{
+        display: none;
+    }
+    .menu-item{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 20px 0;
+        padding-bottom: 5px;
+    }
+    .nav-wrapper img{
+        width: 140px;
+        height: 70px;
+        margin-top: 20px;
+    }
+
+    .menu .menu-item .menu-link{
+       color: #FFF;
+
+    }
+    .menu-wrapper .menu .menu-link.active{
+        font-size: 14px;
+        font-family: var(--heading-font);
+        color: var(--primary);
+        background-color: #fff;
+        padding: 5px 10px 5px 10px;
+        border: 1px solid #FFF;
+        border-radius: 10px;
+       
+    }
+    .nav-wrapper .menu-toggle{
+        display: initial;
+        font-size: 2.5rem;
+        color: var(--primary);
+        margin-left: 20px;
+        transition: .5s;
+        
+    }
+    /* Home start */
+    .image1{
+       
+        width: 200px;
+        height: 200px;
+        
+    }
+     .image2{
+        width: 50px;
+        height: 50px;
+        right:  139px;
+        top: 284px;
+    }
+     .image3{
+        width: 50px;
+        height: 50px;
+        right: 283px;
+        top: 411px;
+    
+    }
+     .image4{
+        width: 50px;
+        height: 100px;
+        top: 417px;
+      
+    }
+    .heading{
+        font-size: 24px;
+    }
+    .subheading{
+        font-size: 12px;
+    }
+    .download{
+        padding: 5px 7px 5px 5px;
+        font-size: 10px;
+    }
+    .download img{
+        height: 20px;
+        width: 20px;
+    }
+    /* Home end */
+
+    /* Fitur start */
+.fitur-wrapper{
+    margin-top: -80px;
+}
+
+
+    .map{
+        width: 600px;
+        height: 300px;
+    }
+    .service{
+        row-gap: 37px;
+        column-gap: 118px;
+        width: 100%;
+        
+        margin-top: 80px ;  
+
+    }
+    .heading-fitur h2{
+        font-size: 16px;
+        
+    }
+    .heading-fitur h1{
+      
+      font-size: 24px;
+    }
+    .heading-fitur p {
+        font-size: 12px;
+    }
+    .fitur .fitur-wrapper .heading-fitur{
+        gap: 9px;
+        height: 148px;
+    }
+      /* Fitur end */
+
+      /* monitor start */
+
+      .judul{
+        font-size: 24px;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .deskripsi{
+        max-width: 100%;
+        height: auto;
+        font-size: 14px;
+      
+    }
+    .img-monitoring img{
+        width: 100%;
+    }
+    .home-icon{
+        width: 40px;
+        height: 40px;
+    }
+    
+    .icon-grup{
+        margin-top: 10px;
+    }
+    .back{
+        background-color: #F0EEEE;
+        padding: 6px;
+        border-radius: 50%;
+    }
+    .heading-monitoring h1{
+        font-size: 32px;
+       }
+
+     .slider{
+        padding: 0px 39px 82px 72px;
+     }  
+
+      /* monitor end */
+       /* jalanrusak start */
+
+    .content-text{
+        gap:16px;
+    }
+       .content-judul{
+        font-size:20px ;
+        line-height: 45px; /* 135% */
+    }    
+    .content-deskripsi{
+        font-size: 12px;
+        line-height: 32px; /* 177.778% */
+        
+    }
+    .download-jalanrusak img{
+        max-width: 20px;
+    }
+    .download-jalanrusak{
+        font-size: 14px;
+      
+}
+/* jalan rusak end */
+
+
+}
+@media screen and (max-width: 605px){
+  /* home start */
+    .image1{
+       
+        width: 200px;
+        height: 200px;
+        right:   61px;
+        top: 331px;
+        
+    }
+     .image2{
+        width: 50px;
+        height: 50px;
+        right:   85px;
+        top: 324px;
+    }
+     .image3{
+        width: 50px;
+        height: 50px;
+        right: 228px;
+        top: 441px;
+    }
+     .image4{
+        width: 50px;
+        height: 100px;
+        top: 463px;
+        right:   85px;
+      
+    }
+    .heading{
+        font-size: 16px;
+    }
+    .subheading{
+        font-size: 10px;
+    }
+    .download{
+        padding: 5px 7px 5px 5px;
+        font-size: 8px;
+    }
+    .download img{
+        height: 15px;
+        width: 15px;
+    }
+
+    /* home :end */
+    
+    /* fitur start */
+    .fitur .fitur-wrapper .heading-fitur {
+        width: 400px;
+    }
+    .heading-fitur h2{
+        font-size: 14px;
+        font-weight: 600;
+        font-family: var(--heading-font);
+        color: var(--primary);
+        letter-spacing: 0.095em;
+        line-height: 27px;
+        letter-spacing: 0.095em;
+        text-align: center;
+    }
+    .heading-fitur h1{
+      font-size: 16px;
+      line-height: 62px;
+    }
+    .heading-fitur p{
+        width: 400px;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .map{
+        width: 360px;
+        height: 165px;
+       
+    }
+    .fitur-wrapper{
+        margin-top: -80px;
+    }
+    .frame{
+        max-width: 117px;
+    }
+    .frame p{
+        font-size: 12px;
+        line-height:  17px;
+    }
+    .frame h2{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .frame img{
+       height: 60px;
+       width: 60px;
+    }
+
+
+
+      /* fitur end */
+
+      
+      /* monitor start */
+
+      .judul{
+        font-size: 16px;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .deskripsi{
+        max-width: 100%;
+        height: auto;
+        font-size: 10px;
+      
+    }
+    
+    .home-icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .icon-grup{
+        margin-top: 10px;
+    }
+    .back{
+        background-color: #F0EEEE;
+        padding: 6px;
+        border-radius: 50%;
+    }
+    .heading-monitoring h1{
+        font-size: 24px;
+       }
+       .navigator a{
+        padding: 5px;
+        font-size: 0px;
+        color: #C4C4C4;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+    }
+    #search{
+
+        width: 30px;
+        height: 30px;
+    }
+    #list{
+        width: 30px;
+        height: 30px;
+    }
+
+       /* monitor end */
+
+        /* jalanrusak start */
+.jalanrusak-wrapper{
+    padding: 0 39px 82px 72px;
+}
+       .content-judul{
+        font-weight: 500;
+        font-size:20px ;
+        line-height: 40px; /* 135% */
+    }    
+    .content-deskripsi{
+        color: #F1F2F6;
+        font-size: 16px;
+        line-height: 30px; /* 177.778% */
+        
+    }
+    .content-text{
+        gap:25px;
+        padding: 5px 5px 20px 20px;
+        width: 100%;
+    }
+    .content-left{
+
+    width: 100%;
+    }
+    .content-right{
+        width: 100%;
+    }
+    .download-jalanrusak img{
+        max-width: 20px;
+    }
+    .download-jalanrusak{
+        font-size: 16px;
+      
+}
+.content-jalanrusak{
+    gap: 10px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column-reverse;
+    max-width: 1440px;
+    max-height: 385px;
+    background-color: var(--primary) ;
+    border-radius: 16px;
+}
+.img-jalan-rusak{
+    width: 100%;
+    height: auto;
+    border-radius: 16px  16px 0 0;
+
+}
+.img-jalanrusak{
+    width: 100%;
+    height: auto;
+   
+}
+
+  /* jalan rusak end */
+
+  /* footer  */
+ .text-alamat, .text-logokecil,.email{
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 490px){
+
+    /* home start */
+    .image1{
+       
+        width: 200px;
+        height: 200px;
+        right: 133px;
+    top: 307px
+        
+    }
+     .image2{
+        width: 50px;
+        height: 50px;
+        right: 147px;
+        top: 305px;
+     }
+     .image3{
+        width: 50px;
+        height: 50px;
+        right: 290px;
+        top: 416px;
+    }
+     .image4{
+        width: 50px;
+        height: 100px;
+        top: 434px;
+        right: 156px;
+      
+    }
+    .subheading{
+        font-size: 10px;
+    }
+    .download{
+        padding: 5px 7px 5px 5px;
+        font-size: 8px;
+    }
+    .download img{
+        height: 10px;
+        width: 10px;
+    }
+    .home-wrapper .content-left{
+        flex: 0 0 90%;
+    }
+    .home-wrapper .content-right{
+        flex: 0 0 10%;
+        position: absolute;
+       
+    }
+    .home .home-wrapper{
+        margin: auto;
+        display: grid;
+        flex-wrap: wrap;
+        padding: 0 72px;
+        width: 100%;
+      
+        
+    }
+    .heading{
+        font-size: 16px;
+        line-height: 20px;
+    }
+/* home end */
+    /* fitur strat */
+    .fitur .fitur-wrapper .heading-fitur {
+       margin-top: 178px;
+       width: 100%;
+    }
+    .img-map{
+        width: 100%;
+        height: auto;
+    }
+    .service {
+        row-gap: 37px;
+        column-gap: 7px;
+        width: 114%;
+        margin-top: 47px;
+    }
+    /* fitur end*/
+
+      /* monitor start */
+
+      .judul{
+        font-size: 16px;
+        max-width: 100%;
+        height: auto;
+        
+    }
+    .deskripsi{
+        max-width: 100%;
+        height: auto;
+        font-size: 10px;
+      
+    }
+    .home-icon{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .icon-grup{
+        margin-top: 10px;
+    }
+    .back{
+        background-color: #F0EEEE;
+        padding: 6px;
+        border-radius: 50%;
+    }
+    .heading-monitoring h1{
+        font-size: 24px;
+       }
+       .navigator a{
+        padding: 5px;
+        font-size: 0px;
+        color: #C4C4C4;
+        background-color: #C4C4C4;
+        border-radius: 50%;
+    }
+    #search{
+
+        width: 30px;
+        height: 30px;
+    }
+    #list{
+        width: 30px;
+        height: 30px;
+    }
+    .img-monitoring img{
+        width: 80%;
+    }
+    .slide-left{
+        margin-left: 50px;
+    }
+    .frame-slider.active-slide {
+        display: flex;
+        flex-direction: column;
+        opacity: 1;
+        align-items: center;
+    }
+
+       /* monitoe end */
+   
+     /* jalanrusak start */
+     .jalanrusak-wrapper{
+        padding: 0 39px 82px 72px;
+    }
+           .content-judul{
+            font-weight: 500;
+            font-size:16px ;
+            line-height: 20px; /* 135% */
+        }    
+        .content-deskripsi{
+            color: #F1F2F6;
+            font-size: 12px;
+            line-height: 20px; /* 177.778% */
+            
+        }
+        .content-text{
+            gap:15px;
+            padding: 5px 5px 20px 20px;
+            width: 100%;
+        }
+        .content-left{
+    
+        width: 100%;
+        }
+        .content-right{
+            width: 100%;
+        }
+        .download-jalanrusak img{
+            max-width: 20px;
+        }
+        .download-jalanrusak{
+            font-size: 12px;
+          
+   
+    
+    }
+
+}
+
+
+
+
+
